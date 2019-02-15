@@ -21,10 +21,11 @@ var remainingGuesses = document.getElementById("remaining-guesses")
 document.onkeyup = function(event) {
 var letters = event.key;
 }
+var randomWord = words[Math.floor(Math.random() * words.length)];
 
 // computer randomly displays a word in space
+document.textContent(randomWord)
 
-var randomValue = words[Math.floor(Math.random() * words.length)];
 // player guesses a letter. if guess is right the computer will replace the correct space with the word. 
 // if the guess is wrong the guessed letter will go into the "wrong bin" and player loses a guess
 // if the player uses all guesses and does not guess the word the game is over and the correct word is displayed
