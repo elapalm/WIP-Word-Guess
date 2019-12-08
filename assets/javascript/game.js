@@ -1,6 +1,6 @@
 // array for the words to be guessed 0-17
 
-var words = ["Serenity", "Shiny", "Reavers", "Shiny", "Browncoats", "River", "Simon", "Jayne", "Inara", "Book", "Mal", "Captain", "Miranda", "Kaylee", "Zoe", "Wash", "Alliance"]
+var words = ["PHONEIX", "SAGUARO", "COYOTE", "MONSOON", "DRY HEAT", "GRAND CANYON", "RATTLE SNAKE", "MOUNTAINS", "SEDONA", "MARGARITAS", "", "", "", "", "", "", ""]
 
 // scoring varriables
 
