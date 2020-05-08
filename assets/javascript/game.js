@@ -10,7 +10,7 @@ var remainingGuesses = 0; // Counts the number of remaining guesses
 var wins = 0;
 var losses= 0;
 var gameEnd = false; //When the game ends (is true); game restarts
-var wordAnswer; //Answer is shown when guesses = 0;
+var wordAnswer; //The current word
 
 
 
@@ -27,10 +27,15 @@ function GameStart() {
 var randomWord = words[Math.floor(Math.random() * words.length)];
   letters = randomWord.split("");
   
-  blanks = letters.length;
+  randomWord = [];
   
-  for (var i = 0; 1 < blanks; i++) {
-    spacesAndWord.push("_");
+  for (var i = 0; 1 < wordAnswer.length; i++) {
+    randomWord[i] = "_";
+
+  }
+
+  
+  /** 
     {
 
       document.getElementById("currentword").innerHTML = " " + blankSpaces.join(" ");
@@ -48,3 +53,4 @@ var letters = event.key;
 // if the player uses all guesses and does not guess the word the game is over and the correct word is displayed
 // if the player guesses the correct word an image supporting the word appears and a sound will play.
 // game restarts after sound ends and a new word is displayed
+*/
